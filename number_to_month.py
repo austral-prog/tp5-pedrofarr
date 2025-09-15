@@ -1,17 +1,10 @@
 def number_to_month(month):
-    months = {
-        1: "enero",
-        2: "febrero",
-        3: "marzo",
-        4: "abril",
-        5: "mayo",
-        6: "junio",
-        7: "julio",
-        8: "agosto",
-        9: "septiembre",
-        10: "octubre",
-        11: "noviembre",
-        12: "diciembre"
-    }
-    return months.get(month, "error")
-    #number_to_month()
+    months = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
+    if 1 <= month <= 12:
+        return months[month - 1]
+    else:
+        return "error"
+print(number_to_month(1))
+print(number_to_month(2)) 
+print(number_to_month(99))
+#number_to_month()

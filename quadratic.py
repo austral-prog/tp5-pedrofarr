@@ -39,4 +39,3 @@ def derivation(a, b, c):
 #value_y()
 #to_string()
 #derivation()
-

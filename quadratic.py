@@ -34,8 +34,3 @@ def derivation(a, b, c):
     if not parts:
         parts.append("0")
     return "f'(x) = " + " + ".join(parts)
-
-#roots()
-#value_y()
-#to_string()
-#derivation()
